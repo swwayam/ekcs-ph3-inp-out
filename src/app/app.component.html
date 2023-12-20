@@ -1,0 +1,5 @@
+<app-person1 (newMessage)="takeMessage($event)"></app-person1>
+
+<h1>Latest Message is : {{latestMessage}}</h1>
+
+<app-person2 [messageFromParent]="latestMessage"></app-person2>
